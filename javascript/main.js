@@ -22,6 +22,13 @@ var genres = [metal, dance, hipHop];
 console.log(genres[1][2]);
 console.log(genres[2][2]);
 
+for (var i = 0; i < genres.length; i++) {
+	genre = genres[i];
+	for (var j = 0; j < genre.length; j++) {
+		console.log(genres[i][j]);
+	};
+};
+
 var x = 3;
 var y = -7;
 
@@ -74,6 +81,16 @@ function newNameTest(){
 		document.getElementById('nameMatchResult').innerHTML = "Those names do not match.";
 	}
 
+}
+
+function doorChooser(n) {
+	if (n === 1) {
+		document.getElementById('winnings').innerHTML = "You win a turkey!";
+	} else if (n === 2) {
+		document.getElementById('winnings').innerHTML = "You win a neeeew car!";	
+	} else {
+		document.getElementById('winnings').innerHTML = "You win jack shyiiit. Wah wah.";
+	}
 }
 
 
